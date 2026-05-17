@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore – BigPlanetarium</title>
+  <!--External stylesheet-->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="BigPlanetarium home">
+        <img src="images/logo.png" alt="BigPlanetarium logo" class="logo-img" width="44" height="44" />
+        <span class="logo-text">BigPlanetarium</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <nav id="primaryNav" class="primary-nav" aria-label="Primary navigation">
+        <ul role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="planet.html" class="nav-link">Planets</a></li>
+          <li><a href="visit.html" class="nav-link active" aria-current="page">Explore</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-labelledby="explore-title">
+      <div class="page-hero-content">
+        <h1 id="explore-title">Explore the Universe</h1>
+        <p>Space images, weird facts, and a quiz to test how much you actually know.</p>
+      </div>
+    </section>
+
+    <!-- SPACE FACTS SECTION -->
+    <section class="facts-section" aria-labelledby="facts-heading">
+      <div class="container">
+        <h2 id="facts-heading">Things about space that sound made up (but aren't)</h2>
+        <p class="section-subtitle">I genuinely had to double-check most of these when I was writing them.</p>
+
+        <div class="fact-cards" role="list">
+
+          <article class="fact-card" role="listitem">
+            <span class="fact-emoji" aria-hidden="true">☀️</span>
+            <h3>The Sun makes up 99.86% of the solar system's mass</h3>
+            <p>Everything else — all 8 planets, every moon, every asteroid, every comet — accounts for just 0.14% of the total mass. Jupiter makes up most of that 0.14%. Earth is basically a rounding error.</p>
+          </article>
+
+          <article class="fact-card" role="listitem">
+            <span class="fact-emoji" aria-hidden="true">🌑</span>
+            <h3>A day on Venus is longer than a year on Venus</h3>
+            <p>Venus rotates so slowly that it takes 243 Earth days to spin once on its axis, but only 225 Earth days to orbit the Sun. So a Venusian day is longer than a Venusian year. And it spins backwards.</p>
+          </article>
+
+          <article class="fact-card" role="listitem">
+            <span class="fact-emoji" aria-hidden="true">🌊</span>
+            <h3>There's a planet that rains glass sideways</h3>
+            <p>HD 189733b is a deep blue exoplanet where temperatures reach 1,000°C and winds blow at 8,700 km/h. Silicate particles form glass in the atmosphere and are flung around at supersonic speeds. Not somewhere you'd want to visit.</p>
+          </article>
+
+          <article class="fact-card" role="listitem">
+            <span class="fact-emoji" aria-hidden="true">🔇</span>
+            <h3>Space is completely silent</h3>
+            <p>Sound needs a medium to travel through. In the vacuum of space there are virtually no particles, so sound waves can't propagate. Explosions in space would be completely silent. All those movie sound effects are lies.</p>
+          </article>
+
+          <article class="fact-card" role="listitem">
+            <span class="fact-emoji" aria-hidden="true">🫧</span>
+            <h3>Neutron stars are absurdly dense</h3>
+            <p>A neutron star is the collapsed core of a massive star — typically about 20km across but containing more mass than the Sun. A teaspoon of neutron star material would weigh about 10 million tonnes.</p>
+          </article>
+
+          <article class="fact-card" role="listitem">
+            <span class="fact-emoji" aria-hidden="true">🌌</span>
+            <h3>We can't see most of the universe</h3>
+            <p>Normal matter makes up only about 5% of the universe. The other 95% is dark matter and dark energy, which we can't directly observe. We know they exist because of how gravity behaves, but we have no idea what they actually are.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SPACE PHOTO GALLERY -->
+    <section class="gallery-section" aria-labelledby="gallery-heading">
+      <div class="container">
+        <h2 id="gallery-heading">Space photography</h2>
+        <p class="section-subtitle">Some of my favourite space images. Most of these are from NASA — the originals are free to use which is pretty great.</p>
+
+        <div class="photo-gallery" role="list">
+
+          <figure role="listitem" class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1446941611757-91d2c3bd3d45?w=500&auto=format"
+              alt="The Milky Way galaxy arching across a clear dark sky above a mountain silhouette, showing thousands of individual stars"
+              loading="lazy"
+              width="500"
+              height="350"
+            />
+            <figcaption>The Milky Way — roughly what you'd see from somewhere with no light pollution</figcaption>
+          </figure>
+
+          <figure role="listitem" class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format"
+              alt="A colourful nebula showing swirling clouds of blue, purple and orange gas lit up by nearby stars"
+              loading="lazy"
+              width="500"
+              height="350"
+            />
+            <figcaption>A stellar nebula — clouds of gas and dust where new stars are being formed</figcaption>
+          </figure>
+
+          <figure role="listitem" class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?w=500&auto=format"
+              alt="Mars from orbit showing its reddish-orange surface, polar ice cap and thin dusty atmosphere"
+              loading="lazy"
+              width="500"
+              height="350"
+            />
+            <figcaption>Mars from orbit — the white at the top is the polar ice cap, mostly frozen CO₂</figcaption>
+          </figure>
+
+          <figure role="listitem" class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=500&auto=format"
+              alt="Long-exposure star trail photograph showing concentric circular arcs of light caused by Earth's rotation"
+              loading="lazy"
+              width="500"
+              height="350"
+            />
+            <figcaption>Star trails — the circles are caused by Earth rotating during a long camera exposure</figcaption>
+          </figure>
+
+          <figure role="listitem" class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1630694093867-4b947d812bf0?w=500&auto=format"
+              alt="Saturn and its ring system against a black background, showing golden banded clouds and the shadow of the rings"
+              loading="lazy"
+              width="500"
+              height="350"
+            />
+            <figcaption>Saturn, photographed by the Cassini spacecraft before it crashed into the planet in 2017</figcaption>
+          </figure>
+
+          <figure role="listitem" class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=500&auto=format"
+              alt="A distant spiral galaxy seen from above, showing bright blue spiral arms and a glowing yellow core"
+              loading="lazy"
+              width="500"
+              height="350"
+            />
+            <figcaption>A spiral galaxy — this is roughly what the Milky Way would look like from outside</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SPACE QUIZ -->
+    <section class="quiz-section" aria-labelledby="quiz-heading">
+      <div class="container">
+        <h2 id="quiz-heading">Quick space quiz</h2>
+        <p class="section-subtitle">Five questions. No cheating. See how you get on.</p>
+
+        <div class="quiz-wrapper" id="quizWrapper">
+          <div class="quiz-progress" aria-live="polite" id="quizProgress">Question 1 of 5</div>
+
+          <div class="quiz-question-area" id="quizQuestionArea">
+            <p class="quiz-question" id="quizQuestionText"></p>
+            <div class="quiz-options" id="quizOptions" role="group" aria-labelledby="quizQuestionText">
+              <!-- Buttons injected by JS -->
+            </div>
+            <div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div>
+          </div>
+
+          <div class="quiz-result hidden" id="quizResult" aria-live="polite">
+            <p class="quiz-score" id="quizScore"></p>
+            <p class="quiz-result-msg" id="quizResultMsg"></p>
+            <button class="btn btn-primary" id="quizRestartBtn">Try again</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCALE OF THE SOLAR SYSTEM -->
+    <section class="scale-section" aria-labelledby="scale-heading">
+      <div class="container">
+        <h2 id="scale-heading">Just how far away is everything?</h2>
+        <p>
+          One of the hardest things to wrap your head around is the actual scale of the
+          solar system. If you shrunk the Sun down to the size of a football (about 22cm),
+          here's where everything else would be:
+        </p>
+
+        <table class="planet-table scale-table" aria-label="Solar system scale distances if the Sun were a football">
+          <caption>If the Sun were the size of a football (22cm diameter)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Planet</th>
+              <th scope="col">Real distance from Sun</th>
+              <th scope="col">Scaled distance</th>
+              <th scope="col">Planet about the size of...</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Mercury</td><td>57.9 million km</td><td>24 metres</td><td>A grain of sand</td></tr>
+            <tr><td>Venus</td><td>108 million km</td><td>45 metres</td><td>A pea</td></tr>
+            <tr><td>Earth</td><td>150 million km</td><td>63 metres</td><td>A pea</td></tr>
+            <tr><td>Mars</td><td>228 million km</td><td>95 metres</td><td>A small grape</td></tr>
+            <tr><td>Jupiter</td><td>778 million km</td><td>324 metres</td><td>A large marble</td></tr>
+            <tr><td>Saturn</td><td>1.43 billion km</td><td>595 metres</td><td>A marble</td></tr>
+            <tr><td>Uranus</td><td>2.87 billion km</td><td>1.2 km away</td><td>A small marble</td></tr>
+            <tr><td>Neptune</td><td>4.5 billion km</td><td>1.9 km away</td><td>A small marble</td></tr>
+          </tbody>
+        </table>
+
+        <p class="scale-note">
+          So if the Sun is a football sitting on the centre spot at Ashton Gate,
+          Neptune would be somewhere near the M32 motorway junction.
+          And the nearest star (Proxima Centauri) would be in <strong>New York</strong>.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">BigPlanetarium</span>
+        <p>Bristol's home for space exploration since 2008.<br>Making science fun, one galaxy at a time.</p>
+      </div>
+      <!--Nav In footer that leads to other pages-->
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="planet.html">Planets</a></li>
+          <li><a href="visit.html">Explore</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer-copy"><small>&copy; BigPlanetarium. Images From NASA and Unsplash. Contact us: BigPlanetarium@gmail.com</small></p>
+  </footer>
+
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll back to top of page" title="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

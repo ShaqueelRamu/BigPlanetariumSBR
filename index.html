@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BigPlanetarium – Explore the Milky Way</title>
+  <!-- External stylesheet that the brief needed -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip to main content link – keyboard and screen reader accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!--HEADER / NAV with the page links and selection-->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="BigPlanetarium home">
+        <img src="images/logo.png" alt="BigPlanetarium logo" class="logo-img" width="44" height="44" />
+        <span class="logo-text">BigPlanetarium</span>
+      </a>
+
+      <!-- Hamburger button – shown on mobile, but stays hidden on desktop with CSS -->
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- the Primary navigation -->
+      <nav id="primaryNav" class="primary-nav" aria-label="Primary navigation">
+        <ul role="list">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="planet.html" class="nav-link">Planets</a></li>
+          <li><a href="visit.html" class="nav-link">Explore</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+   
+    <section class="hero" aria-labelledby="hero-heading">
+     
+      <div class="stars-layer" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">An educational space website</p>
+        <h1 id="hero-heading" class="hero-title">
+          Welcome to<br>
+          <span class="highlight">BigPlanetarium</span>
+        </h1>
+        <p class="hero-description">
+          Ever looked up at the night sky and thought "what even IS out there??"
+          Explore the Milky Way, learn about the planets, and test your space knowledge.
+        </p>
+        <div class="hero-cta">
+          <a href="planet.html" class="btn btn-primary">Discover Planets</a>
+          <a href="visit.html" class="btn btn-secondary">Explore Space</a>
+        </div>
+      </div>
+
+    
+      <div class="hero-image-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=900&auto=format"
+          alt="A breathtaking spiral galaxy viewed from space, showing swirling arms of blue and white stars against a deep black background"
+          class="hero-image"
+          width="900"
+          height="600"
+          loading="eager"
+        />
+      </div>
+    </section>
+
+    <section class="intro-section" aria-labelledby="milky-way-heading">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-text">
+            <h2 id="milky-way-heading">Our home galaxy: the Milky Way</h2>
+            <p>
+              The Milky Way is honestly mind-blowing. It's a barred spiral galaxy
+              containing somewhere between 100 and 400 billion stars — and our Sun
+              is just one of them, sitting about 26,000 light-years from the centre.
+            </p>
+            <p>
+              The galaxy is roughly 100,000 light-years across and about 1,000
+              light-years thick at the disc. It takes our solar system around
+              225 million years to complete one orbit around the galactic centre.
+              That's called a "cosmic year" — we've only done about 20 of them
+              since Earth formed!
+            </p>
+            <p>
+              At BigPlanetarium, we believe the best way to understand just how
+              huge this all is… is to come and see it for yourself in our dome
+              theatre. Words and numbers only go so far.
+            </p>
+          </div>
+
+         
+          <aside class="facts-card" aria-label="Milky Way quick facts">
+            <h3>Quick Facts</h3>
+            <dl class="facts-list">
+              <div class="fact-item">
+                <dt>Diameter</dt>
+                <dd>~100,000 light-years</dd>
+              </div>
+              <div class="fact-item">
+                <dt>Number of stars</dt>
+                <dd>100–400 billion</dd>
+              </div>
+              <div class="fact-item">
+                <dt>Age</dt>
+                <dd>~13.6 billion years</dd>
+              </div>
+              <div class="fact-item">
+                <dt>Type</dt>
+                <dd>Barred spiral galaxy</dd>
+              </div>
+              <div class="fact-item">
+                <dt>Nearest galaxy</dt>
+                <dd>Canis Major Dwarf (~25,000 ly)</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  
+    <section class="planets-preview" aria-labelledby="planets-heading">
+      <div class="container">
+        <h2 id="planets-heading">Meet the planets</h2>
+        <p class="section-subtitle">Our solar system has 8 official planets (sorry, Pluto). Here's a quick intro to a few favourites.</p>
+
+    
+        <div class="planet-cards" role="list">
+
+          <article class="planet-card" role="listitem">
+            <img
+              src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?w=400&auto=format"
+              alt="The planet Mars, a reddish-orange sphere with visible surface features and a thin atmosphere"
+              class="planet-card-img"
+              width="400"
+              height="300"
+              loading="lazy"
+            />
+            <div class="planet-card-body">
+              <h3>Mars</h3>
+              <p>The Red Planet. Home to the tallest volcano in the solar system and possibly ancient rivers. Future humans might live here — wild, right?</p>
+              <a href="planet.html" class="card-link">Read more about Mars →</a>
+            </div>
+          </article>
+
+          <article class="planet-card" role="listitem">
+            <img
+              src="https://images.unsplash.com/photo-1630694093867-4b947d812bf0?w=400&auto=format"
+              alt="The planet Saturn with its distinctive ring system, glowing golden-brown against a black space background"
+              class="planet-card-img"
+              width="400"
+              height="300"
+              loading="lazy"
+            />
+            <div class="planet-card-body">
+              <h3>Saturn</h3>
+              <p>Probably the most recognisable planet — those rings are made of ice and rock, spanning up to 282,000 km. It's also less dense than water!</p>
+              <a href="planet.html" class="card-link">Read more about Saturn →</a>
+            </div>
+          </article>
+
+          <article class="planet-card" role="listitem">
+            <img
+              src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=400&auto=format"
+              alt="The gas giant Jupiter with its iconic swirling cloud bands in shades of orange, cream, and brown"
+              class="planet-card-img"
+              width="400"
+              height="300"
+              loading="lazy"
+            />
+            <div class="planet-card-body">
+              <h3>Jupiter</h3>
+              <p>The biggest planet in our solar system. Its Great Red Spot is a storm that's been raging for at least 350 years. That's just insane to think about.</p>
+              <a href="planet.html" class="card-link">Read more about Jupiter →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="video-section" aria-labelledby="video-heading">
+      <div class="container">
+        <h2 id="video-heading">Watch & Learn</h2>
+        <p>Experience the cosmos! Perfect for visual learners and space enthusiasts.<p>
+
+
+        <div class="video-wrapper">
+          <iframe
+            class="yt-embed"
+            src="https://www.youtube.com/embed/0fKBhvDjuy0"
+            title="Milky Way 4K NASA visualisation video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">BigPlanetarium</span>
+        <p>An educational website about the Milky Way and our solar system.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="planet.html">Planets</a></li>
+          <li><a href="visit.html">Explore</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer-copy">
+      <small>&copy;BigPlanetarium. Images from NASA and Unsplash. Contact Us: BigPlanetarium@gmail.com</small>
+    </p>
+  </footer>
+
+  <!-- Scroll to top button with javascript -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll back to top of page" title="Back to top">
+    ↑
+  </button>
+
+  <!-- link to javascript -->
+  <script src="script.js"></script>
+
+</body>
+</html>

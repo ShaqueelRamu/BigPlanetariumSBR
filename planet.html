@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planets – BigPlanetarium</title>
+  <!--The link to external stylesheet-->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="BigPlanetarium home">
+        <img src="images/logo.png" alt="BigPlanetarium logo" class="logo-img" width="44" height="44" />
+        <span class="logo-text">BigPlanetarium</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <nav id="primaryNav" class="primary-nav" aria-label="Primary navigation">
+        <ul role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="planet.html" class="nav-link active" aria-current="page">Planets</a></li>
+          <li><a href="visit.html" class="nav-link">Explore</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero-content">
+        <h1 id="page-title">The Planets</h1>
+        <p>Eight worlds, billions of kilometres of space, and a whole lot of weirdness. Let's dig in.</p>
+      </div>
+    </section>
+
+    <section class="planet-feature" aria-labelledby="planet-section-heading">
+      <div class="container">
+        <h2 id="planet-section-heading" class="visually-hidden">Explore each planet</h2>
+
+        <!-- Planet navigation tabs with all 8 planets -->
+        <div class="planet-tabs" role="tablist" aria-label="Select a planet to explore">
+          <button class="tab-btn active" role="tab" aria-selected="true"  aria-controls="mercury-panel" id="tab-mercury" tabindex="0">Mercury</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="venus-panel"   id="tab-venus"   tabindex="-1">Venus</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="earth-panel"   id="tab-earth"   tabindex="-1">Earth</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="mars-panel"    id="tab-mars"    tabindex="-1">Mars</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="jupiter-panel" id="tab-jupiter" tabindex="-1">Jupiter</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="saturn-panel"  id="tab-saturn"  tabindex="-1">Saturn</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="uranus-panel"  id="tab-uranus"  tabindex="-1">Uranus</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="neptune-panel" id="tab-neptune" tabindex="-1">Neptune</button>
+        </div>
+
+        <!-- MERCURY Section-->
+        <div id="mercury-panel" class="planet-panel" role="tabpanel" aria-labelledby="tab-mercury">
+          <div class="planet-layout">
+            <div class="planet-info">
+              <h2>Mercury – The Speedy One</h2>
+              <p class="planet-tagline">First planet from the Sun. Tiny, cratered, and absolutely scorching.</p>
+              <p>
+                Mercury is the smallest planet in the solar system and the closest to the Sun,
+                but it's not the hottest — that's Venus. Because Mercury has almost no
+                atmosphere, it can't trap heat. Temperatures swing wildly: up to 430°C during
+                the day and plummeting to −180°C at night.
+              </p>
+              <p>
+                Mercury orbits the Sun faster than any other planet — it completes one orbit in
+                just 88 Earth days. But a day on Mercury (one full rotation) takes 59 Earth days.
+                So a Mercury year is only about 1.5 Mercury days long. Completely bizarre.
+              </p>
+              <table class="planet-table" aria-label="Key facts about Mercury">
+                <caption class="visually-hidden">Key statistics for Mercury</caption>
+                <thead><tr><th scope="col">Property</th><th scope="col">Value</th></tr></thead>
+                <tbody>
+                  <tr><td>Distance from Sun</td><td>57.9 million km (avg)</td></tr>
+                  <tr><td>Diameter</td><td>4,879 km</td></tr>
+                  <tr><td>Day length</td><td>59 Earth days</td></tr>
+                  <tr><td>Year length</td><td>88 Earth days</td></tr>
+                  <tr><td>Moons</td><td>0</td></tr>
+                  <tr><td>Surface temp range</td><td>−180°C to 430°C</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="planet-media">
+              <div class="carousel" id="mercuryCarousel" aria-label="Mercury image carousel" aria-roledescription="carousel">
+                <div class="carousel-track" aria-live="polite">
+                  <figure class="carousel-slide" aria-hidden="false">
+                    <img src="images/mercury-1.jpg" alt="Mercury globe photographed by NASA MESSENGER spacecraft, a grey heavily cratered sphere against black space" width="600" height="450" loading="lazy" />
+                    <figcaption>Mercury's full globe — MESSENGER spacecraft, 2013</figcaption>
+                  </figure>
+                  <figure class="carousel-slide" aria-hidden="true">
+                    <img src="images/mercury-2.jpg" alt="The Caloris Basin on Mercury, a huge ancient impact crater over 1500km wide with a bright orange-yellow tinted interior" width="600" height="450" loading="lazy" />
+                    <figcaption>Caloris Basin — one of the largest impact craters in the solar system at 1,550km wide</figcaption>
+                  </figure>
+                  <figure class="carousel-slide" aria-hidden="true">
+                    <img src="images/mercury-3.jpg" alt="Close-up of Mercury surface showing rupes cliffs and cratered terrain in grey tones" width="600" height="450" loading="lazy" />
+                    <figcaption>Mercury's rupes cliffs — huge scarps formed as the planet slowly shrinks</figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-controls">
+                  <button class="carousel-btn" aria-label="Previous image">&#8592;</button>
+                  <div class="carousel-dots" role="group" aria-label="Slide indicators">
+                    <button class="dot active" aria-label="Go to slide 1" data-index="0"></button>
+                    <button class="dot " aria-label="Go to slide 2" data-index="1"></button>
+                    <button class="dot " aria-label="Go to slide 3" data-index="2"></button>
+                  </div>
+                  <button class="carousel-btn" aria-label="Next image">&#8594;</button>
+                </div>
+              </div>
+              <aside class="fun-fact">
+                <h3>💨 Did you know?</h3>
+                <p>Mercury is shrinking. As its iron core cools and contracts, the surface is wrinkling like a dried-up apple. Scientists have found cliffs hundreds of kilometres long called "rupes" — essentially wrinkle ridges caused by the planet collapsing in on itself.</p>
+              </aside>
+            </div>
+          </div>
+        </div>
+
+        <!--VENUS Section -->
+        <div id="venus-panel" class="planet-panel hidden" role="tabpanel" aria-labelledby="tab-venus">
+          <div class="planet-layout">
+            <div class="planet-info">
+              <h2>Venus – Earth's Evil Twin</h2>
+              <p class="planet-tagline">Second planet from the Sun. Similar in size to Earth, but absolutely hellish.</p>
+              <p>
+                Venus is almost exactly the same size as Earth, which is why people used
+                to think it might be similar underneath those thick clouds. It is not.
+                The surface is 465°C — hot enough to melt lead — with crushing atmospheric
+                pressure 90 times that of Earth's. Early Soviet landers survived for about
+                an hour before being destroyed.
+              </p>
+              <p>
+                Venus also rotates backwards compared to most planets, and so slowly that
+                a Venusian day is longer than its year. If you could stand on the surface
+                (you couldn't), you'd see the Sun rise in the west and set in the east.
+              </p>
+              <table class="planet-table" aria-label="Key facts about Venus">
+                <caption class="visually-hidden">Key statistics for Venus</caption>
+                <thead><tr><th scope="col">Property</th><th scope="col">Value</th></tr></thead>
+                <tbody>
+                  <tr><td>Distance from Sun</td><td>108.2 million km (avg)</td></tr>
+                  <tr><td>Diameter</td><td>12,104 km</td></tr>
+                  <tr><td>Day length</td><td>243 Earth days</td></tr>
+                  <tr><td>Year length</td><td>225 Earth days</td></tr>
+                  <tr><td>Moons</td><td>0</td></tr>
+                  <tr><td>Surface temp</td><td>465°C (constant)</td></tr>
+                  <tr><td>Atmosphere</td><td>96% carbon dioxide</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="planet-media">
+              <div class="carousel" id="venusCarousel" aria-label="Venus image carousel" aria-roledescription="carousel">
+                <div class="carousel-track" aria-live="polite">
+                  <figure class="carousel-slide" aria-hidden="false">
+                    <img src="images/venus-1.jpg" alt="Venus photographed from space showing a bright yellowish-white sphere completely covered in thick swirling clouds" width="600" height="450" loading="lazy" />
+                    <figcaption>Venus in visible light — the thick clouds hide the surface completely</figcaption>
+                  </figure>
+                  <figure class="carousel-slide" aria-hidden="true">
+                    <img src="images/venus-2.jpg" alt="Radar map of Venus surface showing mountainous terrain and volcanic plains in false colour orange and brown" width="600" height="450" loading="lazy" />
+                    <figcaption>Venus surface mapped by NASA's Magellan spacecraft using radar — we can't see through the clouds any other way</figcaption>
+                  </figure>
+                  <figure class="carousel-slide" aria-hidden="true">
+                    <img src="images/venus-3.jpg" alt="Venus photographed in ultraviolet showing dark swirling cloud patterns across the planet" width="600" height="450" loading="lazy" />
+                    <figcaption>Venus in ultraviolet — cloud patterns invisible to the naked eye become clear</figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-controls">
+                  <button class="carousel-btn" aria-label="Previous image">&#8592;</button>
+                  <div class="carousel-dots" role="group" aria-label="Slide indicators">
+                    <button class="dot active" aria-label="Go to slide 1" data-index="0"></button>
+                    <button class="dot " aria-label="Go to slide 2" data-index="1"></button>
+                    <button class="dot " aria-label="Go to slide 3" data-index="2"></button>
+                  </div>
+                  <button class="carousel-btn" aria-label="Next image">&#8594;</button>
+                </div>
+              </div>
+              <aside class="fun-fact">
+                <h3>🌡️ Did you know?</h3>
+                <p>Venus is hotter than Mercury, even though it's further from the Sun. This is because of its extreme greenhouse effect — CO₂ traps so much heat that the temperature barely changes between day and night, or between the equator and the poles. It's basically a planet-wide oven.</p>
+              </aside>
+            </div>
+          </div>
+        </div>
+
+        <!-- EARTH Section -->
+        <div id="earth-panel" class="planet-panel hidden" role="tabpanel" aria-labelledby="tab-earth">
+          <div class="planet-layout">
+            <div class="planet-info">
+              <h2>Earth – Our Home</h2>
+              <p class="planet-tagline">Third planet from the Sun. The only one we know for certain has life.</p>
+              <p>
+                Earth is the largest of the four rocky planets and the only body in the
+                universe confirmed to support life — though given the size of the universe,
+                it would be pretty surprising if we were alone. What makes Earth special is
+                the combination of liquid water, a protective magnetic field, a stable
+                atmosphere, and just the right distance from the Sun.
+              </p>
+              <p>
+                Earth's Moon is unusually large relative to its host planet — it's thought
+                to have formed when a Mars-sized body collided with early Earth about
+                4.5 billion years ago. The Moon stabilises Earth's axial tilt, which is
+                a big part of why we have stable seasons and a consistent climate.
+              </p>
+              <table class="planet-table" aria-label="Key facts about Earth">
+                <caption class="visually-hidden">Key statistics for Earth</caption>
+                <thead><tr><th scope="col">Property</th><th scope="col">Value</th></tr></thead>
+                <tbody>
+                  <tr><td>Distance from Sun</td><td>149.6 million km (avg)</td></tr>
+                  <tr><td>Diameter</td><td>12,742 km</td></tr>
+                  <tr><td>Day length</td><td>24 hours</td></tr>
+                  <tr><td>Year length</td><td>365.25 days</td></tr>
+                  <tr><td>Moons</td><td>1 (the Moon)</td></tr>
+                  <tr><td>Surface temp range</td><td>−88°C to 58°C</td></tr>
+                  <tr><td>Atmosphere</td><td>78% nitrogen, 21% oxygen</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="planet-media">
+              <div class="carousel" id="earthCarousel" aria-label="Earth image carousel" aria-roledescription="carousel">
+                <div class="carousel-track" aria-live="polite">
+                  <figure class="carousel-slide" aria-hidden="false">
+                    <img src="images/earth-1.jpg" alt="Earth from space showing blue oceans, white swirling clouds, and patches of green and brown landmass against black space" width="600" height="450" loading="lazy" />
+                    <figcaption>The Blue Marble — taken by Apollo 17 astronauts in 1972, one of the most reproduced photographs ever</figcaption>
+                  </figure>
+                  <figure class="carousel-slide" aria-hidden="true">
+                    <img src="images/earth-2.jpg" alt="Earth photographed from the International Space Station showing a curved horizon with city lights and the thin blue line of the atmosphere" width="600" height="450" loading="lazy" />
+                    <figcaption>Earth from the ISS — that thin blue line is our entire atmosphere</figcaption>
+                  </figure>
+                  <figure class="carousel-slide" aria-hidden="true">
+                    <img src="images/earth-3.jpg" alt="Green and purple aurora australis photographed from space above Earth showing glowing curtains of light over the southern hemisphere" width="600" height="450" loading="lazy" />
+                    <figcaption>Aurora australis photographed from the ISS — caused by charged particles from the Sun hitting our atmosphere</figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-controls">
+                  <button class="carousel-btn" aria-label="Previous image">&#8592;</button>
+                  <div class="carousel-dots" role="group" aria-label="Slide indicators">
+                    <button class="dot active" aria-label="Go to slide 1" data-index="0"></button>
+                    <button class="dot " aria-label="Go to slide 2" data-index="1"></button>
+                    <button class="dot " aria-label="Go to slide 3" data-index="2"></button>
+                  </div>
+                  <button class="carousel-btn" aria-label="Next image">&#8594;</button>
+                </div>
+              </div>
+              <aside class="fun-fact">
+                <h3>🌍 Did you know?</h3>
+                <p>Earth is not a perfect sphere — it bulges at the equator because of its rotation. This means that if you measured from the centre of the Earth, the surface of Mount Chimborazo in Ecuador is actually further from the Earth's core than the summit of Mount Everest, even though Everest is taller above sea level.</p>
+              </aside>
+            </div>
+          </div>
+        </div>
+
+        <!-- MARS Section -->
+        <div id="mars-panel" class="planet-panel hidden" role="tabpanel" aria-labelledby="tab-mars">
+          <div class="planet-layout">
+            <div class="planet-info">
+              <h2>Mars – The Red Planet</h2>
+              <p class="planet-tagline">Fourth planet from the Sun. Reddish, rocky, and genuinely fascinating.</p>
+              <p>
+                Mars has been capturing our imagination for centuries, and honestly for
+                good reason. It's the most Earth-like planet in our solar system — it has
+                seasons, polar ice caps, canyons, and even extinct volcanoes. It's cold
+                though. Very cold. Surface temperatures average around −60°C, dropping
+                to −125°C at the poles in winter. So… bring a coat.
+              </p>
+              <p>
+                One of the most exciting things about Mars right now is that we have
+                <em>actual robots on the surface</em>. NASA's Perseverance rover has been
+                roaming around since February 2021, drilling into rocks and looking for
+                signs of ancient microbial life. And the Ingenuity helicopter became the
+                first powered aircraft to fly on another planet. Just wild.
+              </p>
+              <table class="planet-table" aria-label="Key facts about Mars">
+                <caption class="visually-hidden">Key statistics for Mars</caption>
+                <thead><tr><th scope="col">Property</th><th scope="col">Value</th></tr></thead>
+                <tbody>
+                  <tr><td>Distance from Sun</td><td>227.9 million km (avg)</td></tr>
+                  <tr><td>Diameter</td><td>6,779 km</td></tr>
+                  <tr><td>Day length</td><td>24 hours 37 minutes</td></tr>
+                  <tr><td>Year length</td><td>687 Earth days</td></tr>
+                  <tr><td>Moons</td><td>2 (Phobos &amp; Deimos)</td></tr>
+                  <tr><td>Average surface temp</td><td>−60°C</td></tr>
+                  <tr><td>Atmosphere</td><td>95% carbon dioxide</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="planet-media">
+              <div class="carousel" id="marsCarousel" aria-label="Mars image carousel" aria-roledescription="carousel">
+                <div class="carousel-track" aria-live="polite">
+                  <figure class="carousel-slide" aria-hidden="false">
+                    <img src="images/mars-orbit.jpg" alt="Mars from space showing its distinctive red-orange surface with a visible polar ice cap and atmospheric haze" width="600" height="450" loading="lazy" />
+                    <figcaption>Mars viewed from orbit — you can see the thin atmosphere and polar ice cap</figcaption>
+                  </figure>
+                  <figure class="carousel-slide" aria-hidden="true">
+                    <img src="images/mars-surface.jpg" alt="Close-up surface view of Mars showing rocky reddish-brown terrain and geological formations" width="600" height="450" loading="lazy" />
+                    <figcaption>Rocky terrain on the Martian surface, photographed by NASA's Mars Reconnaissance Orbiter</figcaption>
+                  </figure>
+                  <figure class="carousel-slide" aria-hidden="true">
+                    <img src="images/olympus-mons.jpg" alt="Olympus Mons, the largest volcano in the solar system, seen from orbit as a vast circular shield" width="600" height="450" loading="lazy" />
+                    <figcaption>Olympus Mons — the tallest volcano in the solar system at 22km high</figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-controls">
+                  <button class="carousel-btn" id="prevBtn" aria-label="Previous image">&#8592;</button>
+                  <div class="carousel-dots" role="group" aria-label="Slide indicators">
+                    <button class="dot active" aria-label="Go to slide 1" data-index="0"></button>
+                    <button class="dot" aria-label="Go to slide 2" data-index="1"></button>
+                    <button class="dot" aria-label="Go to slide 3" data-index="2"></button>
+                  </div>
+                  <button class="carousel-btn" id="nextBtn" aria-label="Next image">&#8594;</button>
+                </div>
+              </div>
+              <aside class="fun-fact" aria-label="Fun fact about Mars">
+                <h3>🤯 Did you know?</h3>
+                <p>Olympus Mons on Mars is the tallest volcano in the entire solar system — about 22km high, nearly 3x the height of Mount Everest. It's so wide (600km across) that if you stood on the edge you wouldn't be able to see the other side because of the planet's curvature.</p>
+              </aside>
+            </div>
+          </div>
+        </div>
+
+        <!-- JUPITER Section -->
+        <div id="jupiter-panel" class="planet-panel hidden" role="tabpanel" aria-labelledby="tab-jupiter">
+          <div class="planet-layout">
+            <div class="planet-info">
+              <h2>Jupiter – King of the Planets</h2>
+              <p class="planet-tagline">Fifth planet from the Sun. The biggest planet in our solar system by a very long way.</p>
+              <p>
+                Jupiter is enormous. You could fit 1,300 Earths inside it. It's a gas giant
+                with a very turbulent atmosphere — those colourful bands are actually massive
+                storm systems and wind patterns. Winds on Jupiter can reach 540 km/h.
+              </p>
+              <p>
+                The Great Red Spot is a storm bigger than Earth that has been raging for
+                at least 350 years. Nobody knows exactly when it started — it was already
+                there when we first got good enough telescopes to see it in the 1600s.
+              </p>
+              <table class="planet-table" aria-label="Key facts about Jupiter">
+                <caption class="visually-hidden">Key statistics for Jupiter</caption>
+                <thead><tr><th scope="col">Property</th><th scope="col">Value</th></tr></thead>
+                <tbody>
+                  <tr><td>Distance from Sun</td><td>778.5 million km (avg)</td></tr>
+                  <tr><td>Diameter</td><td>139,820 km</td></tr>
+                  <tr><td>Day length</td><td>9.9 hours</td></tr>
+                  <tr><td>Year length</td><td>11.9 Earth years</td></tr>
+                  <tr><td>Moons</td><td>95 (inc. Europa, Io)</td></tr>
+                  <tr><td>Great Red Spot age</td><td>350+ years</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="planet-media">
+              <div class="carousel" id="jupiterCarousel" aria-label="Jupiter image carousel" aria-roledescription="carousel">
+                <div class="carousel-track" aria-live="polite">
+                  <figure class="carousel-slide" aria-hidden="false">
+                    <img src="images/jupiter-1.jpg" alt="Jupiter full disc photographed by NASA Juno spacecraft showing swirling orange brown and cream cloud bands and the Great Red Spot" width="600" height="450" loading="lazy" />
+                    <figcaption>Jupiter's full disc — photographed by the Juno spacecraft in orbit around the planet</figcaption>
+                  </figure>
+                  <figure class="carousel-slide" aria-hidden="true">
+                    <img src="images/jupiter-2.jpg" alt="Close-up of Jupiter Great Red Spot showing swirling orange and red storm clouds in extreme detail" width="600" height="450" loading="lazy" />
+                    <figcaption>The Great Red Spot up close — a storm wider than Earth that has lasted over 350 years</figcaption>
+                  </figure>
+                  <figure class="carousel-slide" aria-hidden="true">
+                    <img src="images/jupiter-3.jpg" alt="Europa moon of Jupiter photographed from space showing a white icy surface criss-crossed with brown cracks and ridges" width="600" height="450" loading="lazy" />
+                    <figcaption>Europa — Jupiter's moon with a liquid water ocean beneath its icy surface, one of the best candidates for life</figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-controls">
+                  <button class="carousel-btn" aria-label="Previous image">&#8592;</button>
+                  <div class="carousel-dots" role="group" aria-label="Slide indicators">
+                    <button class="dot active" aria-label="Go to slide 1" data-index="0"></button>
+                    <button class="dot " aria-label="Go to slide 2" data-index="1"></button>
+                    <button class="dot " aria-label="Go to slide 3" data-index="2"></button>
+                  </div>
+                  <button class="carousel-btn" aria-label="Next image">&#8594;</button>
+                </div>
+              </div>
+              <aside class="fun-fact">
+                <h3>⚡ Did you know?</h3>
+                <p>Jupiter acts as a kind of "cosmic vacuum cleaner" — its massive gravity attracts and absorbs asteroids and comets that would otherwise head towards the inner solar system. It's been protecting Earth for billions of years without any of us even knowing.</p>
+              </aside>
+            </div>
+          </div>
+        </div>
+
+        <!-- SATURN Section -->
+        <div id="saturn-panel" class="planet-panel hidden" role="tabpanel" aria-labelledby="tab-saturn">
+          <div class="planet-layout">
+            <div class="planet-info">
+              <h2>Saturn – Lord of the Rings</h2>
+              <p class="planet-tagline">Sixth planet from the Sun. Famous for its rings, and even more impressive up close.</p>
+              <p>
+                Saturn is a gas giant with no solid surface — just layers of gas getting
+                denser as you go deeper. Its iconic ring system is made up of billions of
+                pieces of ice and rock, ranging from tiny grains to chunks the size of a house.
+              </p>
+              <p>
+                One genuinely weird fact: Saturn is less dense than water. If you could find
+                a bathtub big enough, Saturn would float in it. It's made mostly of hydrogen
+                and helium, just like the Sun.
+              </p>
+              <table class="planet-table" aria-label="Key facts about Saturn">
+                <caption class="visually-hidden">Key statistics for Saturn</caption>
+                <thead><tr><th scope="col">Property</th><th scope="col">Value</th></tr></thead>
+                <tbody>
+                  <tr><td>Distance from Sun</td><td>1.43 billion km (avg)</td></tr>
+                  <tr><td>Diameter</td><td>116,460 km</td></tr>
+                  <tr><td>Day length</td><td>10.7 hours</td></tr>
+                  <tr><td>Year length</td><td>29.4 Earth years</td></tr>
+                  <tr><td>Moons</td><td>146 (inc. Titan, Enceladus)</td></tr>
+                  <tr><td>Ring span</td><td>Up to 282,000 km</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="planet-media">
+              <div class="carousel" id="saturnCarousel" aria-label="Saturn image carousel" aria-roledescription="carousel">
+                <div class="carousel-track" aria-live="polite">
+                  <figure class="carousel-slide" aria-hidden="false">
+                    <img src="images/saturn-1.jpg" alt="Saturn and its ring system photographed by Cassini spacecraft against a black background showing golden banded clouds" width="600" height="450" loading="lazy" />
+                    <figcaption>Saturn and its rings — photographed by the Cassini spacecraft before it crashed into the planet in 2017</figcaption>
+                  </figure>
+                  <figure class="carousel-slide" aria-hidden="true">
+                    <img src="images/saturn-2.jpg" alt="Saturn's moon Titan photographed from Cassini showing a hazy orange sphere with a thick nitrogen atmosphere" width="600" height="450" loading="lazy" />
+                    <figcaption>Close Up of the Rimgs — Saturns rings are fully made of giant rock debrie that stay on its orbit</figcaption>
+                  </figure>
+                  <figure class="carousel-slide" aria-hidden="true">
+                    <img src="images/saturn-3.jpg" alt="Saturn's moon Enceladus photographed from Cassini showing white icy surface with blue geysers shooting from the south pole" width="600" height="450" loading="lazy" />
+                    <figcaption>Titan — Saturn's largest moon, with a thick atmosphere and lakes of liquid methane on the surface</figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-controls">
+                  <button class="carousel-btn" aria-label="Previous image">&#8592;</button>
+                  <div class="carousel-dots" role="group" aria-label="Slide indicators">
+                    <button class="dot active" aria-label="Go to slide 1" data-index="0"></button>
+                    <button class="dot " aria-label="Go to slide 2" data-index="1"></button>
+                    <button class="dot " aria-label="Go to slide 3" data-index="2"></button>
+                  </div>
+                  <button class="carousel-btn" aria-label="Next image">&#8594;</button>
+                </div>
+              </div>
+              <aside class="fun-fact">
+                <h3>🪐 Did you know?</h3>
+                <p>Saturn's moon Enceladus shoots geysers of water ice into space from its south pole. Scientists think there's a liquid water ocean beneath the icy surface — making it one of the best candidates for extraterrestrial life in our solar system.</p>
+              </aside>
+            </div>
+          </div>
+        </div>
+
+        <!--  URANUS Section -->
+        <div id="uranus-panel" class="planet-panel hidden" role="tabpanel" aria-labelledby="tab-uranus">
+          <div class="planet-layout">
+            <div class="planet-info">
+              <h2>Uranus – The Sideways Planet</h2>
+              <p class="planet-tagline">Seventh planet from the Sun. An ice giant that orbits completely on its side.</p>
+              <p>
+                Uranus is an ice giant — its interior is made mostly of water, methane, and
+                ammonia ices rather than gas like Jupiter or Saturn. Its striking blue-green
+                colour comes from methane in its atmosphere, which absorbs red light and
+                reflects blue and green.
+              </p>
+              <p>
+                The most unusual thing about Uranus is its tilt — it's tilted 98 degrees on
+                its side, so it essentially rolls around the Sun like a bowling ball. One pole
+                spends about 42 years in constant sunlight, then 42 years in complete darkness.
+                This is thought to be caused by a massive collision early in the solar system's history.
+              </p>
+              <table class="planet-table" aria-label="Key facts about Uranus">
+                <caption class="visually-hidden">Key statistics for Uranus</caption>
+                <thead><tr><th scope="col">Property</th><th scope="col">Value</th></tr></thead>
+                <tbody>
+                  <tr><td>Distance from Sun</td><td>2.87 billion km (avg)</td></tr>
+                  <tr><td>Diameter</td><td>50,724 km</td></tr>
+                  <tr><td>Day length</td><td>17.2 hours</td></tr>
+                  <tr><td>Year length</td><td>84 Earth years</td></tr>
+                  <tr><td>Moons</td><td>28 (inc. Titania, Oberon)</td></tr>
+                  <tr><td>Axial tilt</td><td>97.8 degrees</td></tr>
+                  <tr><td>Average temp</td><td>−195°C</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="planet-media">
+              <div class="carousel" id="uranusCarousel" aria-label="Uranus image carousel" aria-roledescription="carousel">
+                <div class="carousel-track" aria-live="polite">
+                  <figure class="carousel-slide" aria-hidden="false">
+                    <img src="images/uranus-1.jpg" alt="Uranus photographed by Voyager 2 in 1986 showing a smooth pale blue-green sphere with no visible surface features" width="600" height="450" loading="lazy" />
+                    <figcaption>Uranus from Voyager 2, 1986 — the only spacecraft to ever visit it</figcaption>
+                  </figure>
+                  <figure class="carousel-slide" aria-hidden="true">
+                    <img src="images/uranus-2.jpg" alt="Uranus with its narrow dark rings visible around the planet photographed from Earth using infrared imaging" width="600" height="450" loading="lazy" />
+                    <figcaption>Uranus's faint ring system — much less visible than Saturn's but they are there</figcaption>
+                  </figure>
+                  <figure class="carousel-slide" aria-hidden="true">
+                    <img src="images/uranus-3.jpg" alt="Uranus moon Miranda photographed by Voyager 2 showing a strange fractured icy surface with huge cliffs and varied terrain" width="600" height="450" loading="lazy" />
+                    <figcaption>Miranda — Uranus's strangest moon, with cliffs 20km high and a surface that looks like it was smashed apart and put back together</figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-controls">
+                  <button class="carousel-btn" aria-label="Previous image">&#8592;</button>
+                  <div class="carousel-dots" role="group" aria-label="Slide indicators">
+                    <button class="dot active" aria-label="Go to slide 1" data-index="0"></button>
+                    <button class="dot " aria-label="Go to slide 2" data-index="1"></button>
+                    <button class="dot " aria-label="Go to slide 3" data-index="2"></button>
+                  </div>
+                  <button class="carousel-btn" aria-label="Next image">&#8594;</button>
+                </div>
+              </div>
+              <aside class="fun-fact">
+                <h3>🫧 Did you know?</h3>
+                <p>Uranus is the coldest planet in the solar system, even though Neptune is further from the Sun. Scientists aren't entirely sure why — it's thought that Uranus has very little internal heat escaping from its core, unlike every other planet. It's essentially cold all the way through.</p>
+              </aside>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEPTUNE Section -->
+        <div id="neptune-panel" class="planet-panel hidden" role="tabpanel" aria-labelledby="tab-neptune">
+          <div class="planet-layout">
+            <div class="planet-info">
+              <h2>Neptune – The Windy One</h2>
+              <p class="planet-tagline">Eighth and furthest planet from the Sun. Dark, cold, and home to the fastest winds in the solar system.</p>
+              <p>
+                Neptune is the most distant planet in our solar system — so far away that
+                sunlight takes over four hours to reach it. Despite this, it has the strongest
+                winds of any planet, reaching up to 2,100 km/h. Nobody is entirely sure where
+                the energy comes from given how little sunlight it receives.
+              </p>
+              <p>
+                Neptune was the first planet to be predicted mathematically before it was
+                actually observed. Astronomers noticed irregularities in Uranus's orbit and
+                calculated that another planet must be causing them — and when they pointed
+                a telescope at the predicted location in 1846, there it was.
+              </p>
+              <table class="planet-table" aria-label="Key facts about Neptune">
+                <caption class="visually-hidden">Key statistics for Neptune</caption>
+                <thead><tr><th scope="col">Property</th><th scope="col">Value</th></tr></thead>
+                <tbody>
+                  <tr><td>Distance from Sun</td><td>4.5 billion km (avg)</td></tr>
+                  <tr><td>Diameter</td><td>49,244 km</td></tr>
+                  <tr><td>Day length</td><td>16.1 hours</td></tr>
+                  <tr><td>Year length</td><td>165 Earth years</td></tr>
+                  <tr><td>Moons</td><td>16 (inc. Triton)</td></tr>
+                  <tr><td>Max wind speed</td><td>2,100 km/h</td></tr>
+                  <tr><td>Average temp</td><td>−200°C</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="planet-media">
+              <div class="carousel" id="neptuneCarousel" aria-label="Neptune image carousel" aria-roledescription="carousel">
+                <div class="carousel-track" aria-live="polite">
+                  <figure class="carousel-slide" aria-hidden="false">
+                    <img src="images/neptune-1.jpg" alt="Neptune photographed by Voyager 2 in 1989 showing a deep vivid blue sphere with white cloud streaks and a dark storm spot" width="600" height="450" loading="lazy" />
+                    <figcaption>Neptune from Voyager 2, 1989 — still the only close-up images we have of this planet</figcaption>
+                  </figure>
+                  <figure class="carousel-slide" aria-hidden="true">
+                    <img src="images/neptune-2.jpg" alt="Neptune's Great Dark Spot photographed by Voyager 2 showing a large dark oval storm system with bright white clouds at its edges" width="600" height="450" loading="lazy" />
+                    <figcaption>The Great Dark Spot — a storm the size of Earth photographed in 1989. When Hubble looked again in 1994, it had vanished.</figcaption>
+                  </figure>
+                  <figure class="carousel-slide" aria-hidden="true">
+                    <img src="images/neptune-3.jpg" alt="Neptune's moon Triton photographed by Voyager 2 showing a pale pinkish icy surface with dark streaks from nitrogen geysers" width="600" height="450" loading="lazy" />
+                    <figcaption>Triton — Neptune's largest moon, orbiting backwards and slowly spiralling to its doom in 3.6 billion years</figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-controls">
+                  <button class="carousel-btn" aria-label="Previous image">&#8592;</button>
+                  <div class="carousel-dots" role="group" aria-label="Slide indicators">
+                    <button class="dot active" aria-label="Go to slide 1" data-index="0"></button>
+                    <button class="dot " aria-label="Go to slide 2" data-index="1"></button>
+                    <button class="dot " aria-label="Go to slide 3" data-index="2"></button>
+                  </div>
+                  <button class="carousel-btn" aria-label="Next image">&#8594;</button>
+                </div>
+              </div>
+              <aside class="fun-fact">
+                <h3>🌊 Did you know?</h3>
+                <p>Neptune's largest moon, Triton, orbits the planet backwards — in the opposite direction to Neptune's rotation. This strongly suggests it was captured from the Kuiper Belt rather than forming alongside Neptune. Triton is also slowly spiralling inward and will eventually be torn apart by Neptune's gravity in about 3.6 billion years.</p>
+              </aside>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PLANET COMPARISON TOOL -->
+    <section class="comparison-section" aria-labelledby="compare-heading">
+      <div class="container">
+        <h2 id="compare-heading">How big are the planets, really?</h2>
+        <p>Select two planets to compare their sizes. The circles below are roughly to scale relative to each other.</p>
+        <div class="compare-controls">
+          <div class="compare-select-group">
+            <label for="planet1">Planet 1</label>
+            <select id="planet1" name="planet1">
+              <option value="mercury">Mercury</option>
+              <option value="venus">Venus</option>
+              <option value="earth" selected>Earth</option>
+              <option value="mars">Mars</option>
+              <option value="jupiter">Jupiter</option>
+              <option value="saturn">Saturn</option>
+              <option value="uranus">Uranus</option>
+              <option value="neptune">Neptune</option>
+            </select>
+          </div>
+          <span aria-hidden="true" class="compare-vs">vs</span>
+          <div class="compare-select-group">
+            <label for="planet2">Planet 2</label>
+            <select id="planet2" name="planet2">
+              <option value="mercury">Mercury</option>
+              <option value="venus">Venus</option>
+              <option value="earth">Earth</option>
+              <option value="mars">Mars</option>
+              <option value="jupiter" selected>Jupiter</option>
+              <option value="saturn">Saturn</option>
+              <option value="uranus">Uranus</option>
+              <option value="neptune">Neptune</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" id="compareBtn">Compare!</button>
+        </div>
+        <div class="comparison-result" id="comparisonResult" aria-live="polite" aria-label="Planet size comparison result"></div>
+      </div>
+    </section>
+
+    <!-- WEIGHT CALCULATOR -->
+    <section class="weight-section" aria-labelledby="weight-heading">
+      <div class="container">
+        <h2 id="weight-heading">What would you weigh on other planets?</h2>
+        <p class="section-subtitle">Gravity varies massively across the solar system. Type your weight on Earth and find out.</p>
+
+        <div class="weight-calculator">
+          <div class="weight-input-group">
+            <label for="weightInput">Your weight on Earth</label>
+            <div class="weight-input-row">
+              <input
+                type="number"
+                id="weightInput"
+                name="weight"
+                min="1"
+                max="500"
+                placeholder="e.g. 70"
+                aria-describedby="weight-hint"
+              />
+              <div class="unit-toggle" role="group" aria-label="Weight unit">
+                <button class="unit-btn active" id="btnKg" aria-pressed="true">kg</button>
+                <button class="unit-btn" id="btnLbs" aria-pressed="false">lbs</button>
+              </div>
+              <button class="btn btn-primary" id="calcWeightBtn">Calculate</button>
+            </div>
+            <p id="weight-hint" class="info-note">Enter your weight then hit Calculate.</p>
+          </div>
+
+          <!-- The Results filled by Javascript -->
+          <div class="weight-results" id="weightResults" aria-live="polite" aria-label="Your weight on each planet"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">BigPlanetarium</span>
+        <p>An educational website about the Milky Way and our solar system.</p>
+      </div>
+      <!--Nav bar at footer for redirection-->
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="planet.html">Planets</a></li>
+          <li><a href="visit.html">Explore</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer-copy"><small>&copy; BigPlanetarium. Images From of NASA and Unsplash. Contact us: BigPlanetarium@gmail.com</a></small></p>
+  </footer>
+
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll back to top of page" title="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What is the Milky Way? – BigPlanetarium</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!--Helps the user skip to the main content-->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!--The header where the logo, navigation bar and name of the client are-->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="BigPlanetarium home">
+        <img src="images/logo.png" alt="BigPlanetarium logo" class="logo-img" width="44" height="44" />
+        <span class="logo-text">BigPlanetarium</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <!--The nav area with the page links-->
+      <nav id="primaryNav" class="primary-nav" aria-label="Primary navigation">
+        <ul role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="planet.html" class="nav-link">Planets</a></li>
+          <li><a href="visit.html" class="nav-link">Explore</a></li>
+          <li><a href="about.html" class="nav-link active" aria-current="page">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<!--The main content where all the text and information on the about section is available-->
+  <main id="main-content">
+
+    <section class="page-hero" aria-labelledby="about-title">
+      <div class="page-hero-content">
+        <h1 id="about-title">What is the Milky Way?</h1>
+        <p>We live inside a galaxy. Here's what that actually means.</p>
+      </div>
+    </section>
+
+    <!-- what is the Milky way section-->
+    <section class="milky-way-intro" aria-labelledby="mw-intro-heading">
+      <div class="container">
+        <div class="story-layout">
+          <div class="story-text">
+            <h2 id="mw-intro-heading">Our home galaxy</h2>
+            <p>
+              The Milky Way is the galaxy that contains our solar system. When you look
+              up at the night sky and see that faint pale band stretching across it —
+              that's the Milky Way. You're looking at the disc of the galaxy edge-on,
+              with billions of stars so far away they just blur together into a glow.
+            </p>
+            <p>
+              It's a barred spiral galaxy, which means it has a bright bar-shaped
+              centre with spiral arms curling out from each end. Our solar system sits
+              in one of those arms — the Orion Arm — about 26,000 light-years from
+              the galactic centre. We're not in the middle, not on the outer edge,
+              just somewhere fairly unremarkable in between.
+            </p>
+            <p>
+              The whole thing is about 100,000 light-years across and roughly 1,000
+              light-years thick at the disc. It's genuinely difficult to picture how
+              big that is. If the Milky Way were the size of Europe, our entire solar
+              system would be smaller than a full stop on this page.
+            </p>
+          </div>
+          <img
+            src="images/milkyway.jpg"
+            alt="An artist's illustration of the Milky Way galaxy seen from above, showing its barred spiral structure with glowing blue and white spiral arms and a bright yellow centre"
+            class="story-img"
+            width="600"
+            height="400"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- The key facts about the milky way are below -->
+    <section class="mw-facts-section" aria-labelledby="mw-facts-heading">
+      <div class="container">
+        <h2 id="mw-facts-heading">Key facts</h2>
+        <div class="mw-facts-grid">
+
+          <article class="mw-fact-block">
+            <h3>Shape</h3>
+            <p>
+              The Milky Way is a <strong>barred spiral galaxy</strong>. It has a dense
+              central bar of older stars, with four main spiral arms winding outwards.
+              The bar itself is about 27,000 light-years long. At the very centre is
+              a supermassive black hole called Sagittarius A*, with a mass about
+              4 million times that of our Sun.
+            </p>
+          </article>
+
+          <article class="mw-fact-block">
+            <h3>Size and scale</h3>
+            <p>
+              The disc is approximately <strong>100,000 light-years in diameter</strong>
+              and about 1,000 light-years thick. However there's also a much larger,
+              roughly spherical halo of older stars and dark matter surrounding the
+              disc, which extends for hundreds of thousands of light-years in every
+              direction.
+            </p>
+          </article>
+
+          <article class="mw-fact-block">
+            <h3>How many stars?</h3>
+            <p>
+              Estimates range from <strong>100 billion to 400 billion stars</strong>.
+              We can't count them directly — there's too much dust in the way and
+              we're inside the thing — so the number is calculated from the galaxy's
+              mass and the typical mass of stars. The true number is genuinely unknown.
+            </p>
+          </article>
+
+          <article class="mw-fact-block">
+            <h3>Age</h3>
+            <p>
+              The Milky Way is approximately <strong>13.6 billion years old</strong>,
+              making it almost as old as the universe itself (which is about 13.8
+              billion years old). The oldest stars in the galaxy formed very shortly
+              after the Big Bang, from the very first clouds of hydrogen and helium.
+            </p>
+          </article>
+
+          <article class="mw-fact-block">
+            <h3>How fast is it moving?</h3>
+            <p>
+              Our solar system orbits the centre of the Milky Way at about
+              <strong>828,000 km/h</strong>. Even at that speed, one full orbit
+              takes around 225–250 million years — known as a "cosmic year." Earth
+              has completed about 20 of these since it formed.
+            </p>
+          </article>
+
+          <article class="mw-fact-block">
+            <h3>Neighbouring galaxies</h3>
+            <p>
+              The Milky Way is part of a group of about 50 galaxies called the
+              <strong>Local Group</strong>. Our nearest large neighbour is Andromeda,
+              about 2.5 million light-years away. The two galaxies are actually on a
+              collision course — they'll merge in about 4.5 billion years. Don't panic.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="galactic-centre" aria-labelledby="gc-heading">
+      <div class="container">
+        <div class="story-layout">
+          <img
+            src="images/sgr-a.jpg"
+            alt="The first image of Sagittarius A*, the supermassive black hole at the centre of the Milky Way, showing a glowing orange ring of gas around a dark central shadow"
+            class="story-img"
+            width="600"
+            height="400"
+            loading="lazy"
+          />
+          <div class="story-text">
+            <h2 id="gc-heading">The black hole at the centre</h2>
+            <p>
+              At the very heart of the Milky Way sits <strong>Sagittarius A*</strong>
+              (pronounced "Sagittarius A-star"), a supermassive black hole with a mass
+              of about 4 million Suns. It's approximately 26,000 light-years from Earth,
+              sitting in the direction of the constellation Sagittarius.
+            </p>
+            <p>
+              We can't see it directly — there's too much dust and gas in the way —
+              but astronomers have tracked the orbits of stars right next to it for
+              over 20 years. The stars move so fast and in such tight curves that
+              something with enormous mass has to be there. In 2022, the Event Horizon
+              Telescope project released the first actual image of Sagittarius A*,
+              showing the glowing ring of material around it.
+            </p>
+            <p>
+              Despite being 4 million solar masses, Sagittarius A* is actually fairly
+              quiet compared to the supermassive black holes in other galaxies.
+              Some of those are billions of solar masses and actively pulling in
+              huge amounts of material, making them visible across the universe as
+              quasars.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="spiral-arms" aria-labelledby="arms-heading">
+      <div class="container">
+        <h2 id="arms-heading">Where are we in the galaxy?</h2>
+        <p>
+          The Milky Way has four main spiral arms: the Norma Arm, the Scutum–Centaurus
+          Arm, the Carina–Sagittarius Arm, and the Perseus Arm. Our solar system is
+          in a smaller, partial arm called the <strong>Orion Arm</strong> (or Orion
+          Spur), which sits between the Perseus and Carina–Sagittarius arms.
+        </p>
+        <p>
+          Being in a spiral arm is actually pretty good for life. The arms contain
+          the gas and dust clouds that form new stars — including our Sun. They're
+          also not so densely packed that nearby supernovae would constantly
+          bombard the solar system with radiation. We're in a fairly safe,
+          relatively quiet neighbourhood. Cosmically speaking.
+        </p>
+
+        <dl class="arms-list">
+          <div class="arm-item">
+            <dt>Perseus Arm</dt>
+            <dd>One of the two major arms, located further from the centre than us. Contains a lot of young, hot stars and star-forming regions.</dd>
+          </div>
+          <div class="arm-item">
+            <dt>Orion Arm (our location)</dt>
+            <dd>A partial arm where our solar system lives, about 26,000 light-years from the galactic centre. Smaller than the four main arms.</dd>
+          </div>
+          <div class="arm-item">
+            <dt>Carina–Sagittarius Arm</dt>
+            <dd>The arm closer to the centre than us. Contains several well-known nebulae including the Carina Nebula and the Lagoon Nebula.</dd>
+          </div>
+          <div class="arm-item">
+            <dt>Scutum–Centaurus Arm</dt>
+            <dd>One of the two major arms, connecting to one end of the central bar. Very rich in stars and star-forming regions.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+   
+    <section class="dark-matter-section" aria-labelledby="dm-heading">
+      <div class="container">
+        <div class="fun-fact" style="max-width: 800px;">
+          <h2 id="dm-heading" style="font-size: 1.3rem; margin-bottom: 0.75rem;">What about dark matter?</h2>
+          <p>
+            Here's something that should genuinely keep you up at night: the stars,
+            gas, and dust we can actually see in the Milky Way only account for about
+            <strong>5% of its total mass</strong>. The rest — roughly 95% — is
+            <strong>dark matter</strong>, an unknown substance we can't see, detect
+            directly, or identify. We only know it's there because the galaxy rotates
+            in a way that can't be explained by the visible mass alone. The outer
+            parts of the galaxy spin just as fast as the inner parts, which shouldn't
+            happen without something extra holding it together. Whatever dark matter
+            is, there's a lot of it, and we genuinely have no idea what it actually is.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">BigPlanetarium</span>
+        <p>An educational website about the Milky Way and our solar system.</p>
+      </div>
+      <!--Nav bar at the footer section that redirects you to another page-->
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="planet.html">Planets</a></li>
+          <li><a href="visit.html">Explore</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer-copy"><small>&copy; BigPlanetarium. Images From NASA. Contact Us: BigPlanetarium@gmail.com</a></small></p>
+  </footer>
+ <!--This is the button that takes you back up the page once you have reached the bottom-->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll back to top of page" title="Back to top">↑</button>
+ <!--Link for the javascript-->
+  <script src="script.js"></script>
+</body>
+</html>
